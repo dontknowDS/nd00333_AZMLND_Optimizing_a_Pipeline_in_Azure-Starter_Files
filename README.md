@@ -27,7 +27,7 @@ Random Search is a technique where random combinations of the given hyperparamet
 I decided to use Random Search, as it requires less experiments and thus less computation time than a grid search across the same search space while yielding good results.
 
 I also implemented an early stopping policy, so the runtime doesn't get too long and also to avoid overfitting. 
-I chose Bandit policy for this, which stops the algorithm when the difference between the current run's metric and the best run's metric is less than the 'slack_factor', which is a given argument which I chose to be 0.1. The frequency in which this policy is apllied was chosen as 1. This way my goals to avoid overfitting and avoid long training time with no improvements have been fulfilled.
+I chose Bandit policy for this, which stops the algorithm when the difference between the current run's metric and the best run's metric is less than the 'slack_factor', which is a given argument which I chose to be 0.1. The frequency in which this policy is apllied was chosen as 1, meaning every run. This way my goals to avoid overfitting and avoid long training time with no improvements have been fulfilled.
 
 
 The resulting Accuracy was 0.911
