@@ -19,6 +19,7 @@ The best performing model was a xgboostclassifier with an accuracy of 0.918.
 
 ## Scikit-learn Pipeline
 The data contained data about people. The target variable y was fitted via logistic regression in training.
+
 The used hyperparameters were "C" and "max_iter", the first being a regularization parameter and the former being used for convergence.
 I used hyperparameter tuning, which is also called hyperparameter optimization. It is the process of finding the configuration of hyperparameters that result in the best performance given a metric. There are several strategies for hyperparameter tuning. 
 For this project we used Random Search as Parameter sampling strategy with a given search space for the parameters 'C' and 'max_iter'. 
